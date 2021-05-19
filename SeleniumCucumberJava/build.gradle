@@ -1,0 +1,27 @@
+plugins {
+
+    id 'java'
+}
+group 'curso udemy'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 15
+
+repositories {
+    mavenCentral()
+}
+
+// aca traemos las dependencias de gradle - maven para trabajar con ellas
+dependencies{
+
+//https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+
+//compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+//implementation "org.seleniumhq.selenium:selenium-java:3.141.59"
+//testImplementation 'io.cucumber:cucumber-java8:6.8.1'
+testImplementation 'io.cucumber:cucumber-junit:4.2.0'
+
+}
